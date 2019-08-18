@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "Test Name";
+}
+
+
+<head>
+    <environment names="Development">
+        <link href="~/css/main.css" rel="stylesheet" />
+
+    </environment>
+    <environment names="Staging,Production">
+        <link href="~/css/main.min.css" rel="stylesheet" />
+    </environment>
+</head>
+
+<body>
+    <div class="portfolio-page">
+        <div class="about-me">
+            <div class="about-me_photo">
+                <img src="http://placehold.it/200x300" />
+            </div>
+            <div class="about-me_discription">
+                <div class="about-me_discription-block">
+                    <div class="about-me_discription-block_title">
+                        <span>ФИО</span>
+                    </div>
+                    <div class="about-me_discription-block_text">
+                        <span>Test Name</span>
+                    </div>
+                </div>
+                <div class="about-me_discription-block">
+                    <div class="about-me_discription-block_title">
+                        <span>Email</span>
+                    </div>
+                    <div class="about-me_discription-block_text">
+                        <span>myemail.com</span>
+                    </div>
+                </div>
+                <div class="about-me_discription-block">
+                    <div class="about-me_discription-block_title">
+                        <span>Навыки</span>
+                    </div>
+                    <div class="about-me_discription-block_text">
+                        <span>Adobe XD, Adobe Photoshop, Adobe Illustrator, 2d design, pancil drawing</span>
+                    </div>
+                </div>
+                <div class="about-me_discription-block">
+                    <div class="about-me_discription-block_title">
+                        <span>О себе</span>
+                    </div>
+                    <div class="about-me_discription-block_text">
+                        <span>Начинающий художник, развиваюсь в сторону Game design, рисую скетчи, и т.д</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery_cloud-tags">
+                <a class="cloud_tag selected">All</a>
+                <a class="cloud_tag">Nature</a>
+                <a class="cloud_tag">CG</a>
+                <a class="cloud_tag">Tree</a>
+                <a class="cloud_tag">Sketch</a>
+                <a class="cloud_tag">House</a>
+                <a class="cloud_tag">Person</a>
+                <a class="cloud_tag">Weapon</a>
+                <a class="cloud_tag">Item</a>
+            </div>
+            <div id="gallery" class="gallery_container">
+                <div data-group='House CG' data-original="http://placehold.it/600x400&text=house_CG" class="picture-item">
+                    <img src="http://placehold.it/600x400&text=house_CG" class="picture-item_preview" />
+                </div>
+                <div data-group='Item CG' data-original="http://placehold.it/600x400&text=item_CG" class="picture-item">
+                    <img src="http://placehold.it/600x400&text=item_CG" class="picture-item_preview" />
+                </div>
+                <div data-group='Item CG' data-original="http://placehold.it/1200x800&text=item_CG" class="picture-item">
+                    <img src="http://placehold.it/1200x800&text=item_CG" class="picture-item_preview" />
+                </div>
+                <div data-group='Tree' data-original="http://placehold.it/600x400&text=Tree" class="picture-item">
+                    <img src="http://placehold.it/600x400&text=Tree" class="picture-item_preview" />
+                </div>
+                <div data-group='Item' data-original="http://placehold.it/600x400&text=Item" class="picture-item">
+                    <img src="http://placehold.it/600x400&text=Item" class="picture-item_preview" />
+                </div>
+                <div data-group='Weapon' data-original="http://placehold.it/600x400&text=Weapon" class="picture-item">
+                    <img src="http://placehold.it/600x400&text=Weapon" class="picture-item_preview" />
+                </div>           
+            </div>
+            <div class="full-screen hidden">
+                <div class="full-screen-mode">
+                    <div class="full-screen-mode_block">
+                        <img class="full-screen-img"/>
+                    </div>                    
+                </div>
+                <div class="full-screen-backdrop"></div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <environment names="Development">
+        <script src="~/js/gallery.js"></script>
+        <script src="~/js/portfolioPage.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/gallery.js"></script>
+        <script src="~/js/portfolioPage.min.js"></script>
+    </environment>
+
+</body>
+
+
+
